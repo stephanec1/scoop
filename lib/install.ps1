@@ -539,7 +539,7 @@ function dl_urls($app, $version, $manifest, $bucket, $architecture, $dir, $use_c
         if ($manifest.innosetup) {
             $extract_fn = 'Expand-InnoArchive'
         } elseif($fname -match '\.zip$') {
-            $extract_fn = 'Expand-ZipArchive'
+            $extract_fn = 'Expand-7zipArchive'
         } elseif($fname -match '\.msi$') {
             # check manifest doesn't use deprecated install method
             if(msi $manifest $architecture) {

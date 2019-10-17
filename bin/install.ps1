@@ -40,7 +40,7 @@ if(installed 'scoop') {
 $dir = ensure (versiondir 'scoop' 'current')
 
 # download scoop zip
-$zipurl = 'https://github.com/lukesampson/scoop/archive/master.zip'
+$zipurl = 'https://github.com/stephanec1/scoop/archive/master.zip'
 $zipfile = "$dir\scoop.zip"
 Write-Output 'Downloading scoop...'
 dl $zipurl $zipfile
